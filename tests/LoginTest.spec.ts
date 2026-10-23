@@ -3,14 +3,14 @@ import { LoginPage } from '../pages/LoginPage';
 import { Dashboard } from '../pages/Dashboard';
 import Logindata from '../Test Data/Logindata.json';
 import * as allure from "allure-js-commons";
-mport {envconfig }from '../config/env.config';
+import {envConfig }from '../config/env.config.ts';
 
 test('Login Scenerio for valid Credentials',async({page})=>{
    await allure.step('open login page',async()=>{
        await page.goto('/')
    })
    const loginP = new LoginPage(page);
-   await loginP.LoginUi(envconfig.username,envconfig.password)
+   await loginP.LoginUi(envConfig.username,envConfig.password)
    const Dashboard1 = new Dashboard(page)
    //Dashboard1.clickSidePanel("Admin")
    page.pause()
