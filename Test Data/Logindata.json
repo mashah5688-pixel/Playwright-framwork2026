@@ -1,0 +1,12 @@
+[
+    {
+        "Scenerio": "Invalid Credentials",
+        "username": "padmini",
+        "password": "1234"
+    },
+    {
+        "Scenerio": "empty data",
+        "username": " ",
+        "password": " "
+    }
+]
